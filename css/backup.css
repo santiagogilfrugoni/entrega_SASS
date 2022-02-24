@@ -1,0 +1,650 @@
+/* Tamano de fuentes importadas 100 -300 - 400 -500 - 700 - 900 */
+
+/* GLOBAL STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+    font-family: 'Roboto', sans-serif;     
+}
+
+html {
+    font-weight: 300;
+    font-size: 10px;
+}
+
+
+header {
+    margin-bottom: 10px;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    padding-top: 5rem;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* UTILITY CLASES*/ 
+/* VER QUE HACER CON ESTO ******* */
+
+/* .u-mb-small {
+    margin-bottom: 1.6rem; 
+}
+
+.ub-mb-medium {
+    margin-bottom: 3rem;
+}
+
+.ub-mb-large {
+    margin-bottom: 5rem;
+} */
+
+
+/* ----- HEADER ----- */
+
+.header-container {
+    width: 100%;
+    height: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #6a76ac;
+    position: relative;
+
+}
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-wrap: wrap;
+    }
+
+        .logo-container {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-decoration: none;
+        }
+
+            .logo-container img {
+                height: 68px;
+                width: 97px;
+                margin-right: 2rem;
+                margin-left: 2rem;
+            }
+
+            .logo-container h1 {
+                color: white;
+                letter-spacing: 2px;
+                font-size: 2.5rem;
+                font-weight: 300;
+                text-align: justify;
+            }
+
+        .nav-list {
+            margin-bottom: 10px;
+        }
+
+            .nav-list ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+                .nav-list ul li {
+                    list-style: none;
+                    padding: 0 .5rem;
+                }
+
+                .nav-list ul li a {
+                    font-size: 2rem;
+                    color: white;
+                    text-decoration: none;
+                    letter-spacing: 1px;
+                    font-weight: 100;
+                    margin: 2px;
+
+                }
+                    .nav-list ul li a:hover {
+                        color: #a4a5ad;
+                    }
+
+/* ----- FOOTER ----- */
+footer {
+    background-color: #6a76ac ;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    }
+
+    .footer-container{
+        width: 80%;
+    }
+
+        .footer-container div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+            .footer-container div p {
+                font-size: 1.4rem;
+                margin: 10px;
+                color: white;
+            }
+
+            .footer-container div img {
+                max-width: 20px;
+                max-height: 20px;
+            }
+
+
+/* ----- INDEX BODY ----- */
+
+/* SECCION SOBRE NOSOTROS */
+
+.aboutUs {
+    display: flex;
+    justify-content: center;
+
+}
+    .aboutUs-container {
+        width: 80%;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+        .aboutUs-content {
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+            .aboutUs-content img {
+                float: right;
+                margin-left: 20px;
+                max-width: 250px;
+                max-height: 300px;
+            }
+
+            .aboutUs-content p {
+                text-align: justify;
+            }
+
+/* SECCION SERVICIOS */
+
+.services-index {
+    display: flex;
+    justify-content: center;
+}
+
+    .services-index-container {
+        width: 80%;
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+        .services-index-grid {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, auto) ;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+            'title-1 title-2 title-3'
+        '   description-1 description-2 description-3';
+            grid-gap: 10px;
+        }
+
+        
+            .services-index-grid div {
+                text-align: justify;
+
+            }
+
+            .services-index-title { /*General para los titulos*/
+                font-size: 2.5rem;
+                font-weight: 400; 
+                margin-bottom: 10px;  
+                justify-self: center;             
+            }    
+
+            .services-index-description { /* General para los textos*/
+                font-size: 1.6rem;
+                padding: 20px;
+                background-color: #5f7096;
+                color: #fff;
+                width: 250px;
+                height: 230px;
+                justify-self: center;
+            }
+
+            .services-index-title-1 {
+                grid-area: title-1;
+            }        
+
+            .services-index-description-1 {
+                grid-area: description-1;
+            }
+
+            .services-index-title-2 {
+                grid-area: title-2;
+    
+            }
+
+            .services-index-description-2 {
+                grid-area: description-2;
+            }
+
+            .services-index-title-3 {
+                grid-area: title-3;
+            }
+
+            .services-index-description-3 {
+                grid-area: description-3 ;
+            }
+
+/* ----- FIN INDEX BODY ----- */
+
+/* ----- CONTACTO BODY -----*/
+
+.contactUs-section {
+    display: flex;
+    justify-content: center;
+}
+
+    .contactForm-container {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+        .contactForm-grid {
+            max-width: 80%;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            /* border: solid black 2px; */
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas: 
+            'input-name input-lastname'
+            'input-phone input-email'
+            'input-subject input-subject'
+            'input-message input-message'
+            'input-message input-message'
+            'button-send button-send';
+            
+        }
+
+            .form-item {
+                /* border: solid black 2px; */
+                height: 4rem;
+                border: none;
+                border-bottom: solid 1px #5f7096;
+                font-size: 1.6rem;
+                border-radius: 4px;
+                letter-spacing: 1px;
+                font-weight: 500;
+            }
+
+            .form-item:placeholder-shown {
+                font-size: 1.8rem;
+            }
+
+            .input-name {
+                grid-area: input-name;
+                padding: 10px;
+                
+            }
+            .input-lastname{
+                grid-area: input-lastname;
+                padding: 10px;
+            }
+            .input-email {
+                grid-area: input-email;
+                padding: 10px;
+            }
+            .input-phone {
+                grid-area: input-phone;
+                padding: 10px;
+            }
+            .input-subject {
+                grid-area: input-subject;
+                padding: 10px;
+            }
+            .input-message {
+                grid-area: input-message;
+                height:16rem;
+                resize: none;
+                overflow-y: scroll;
+                padding: 10px;
+            }
+            .button-send {
+                grid-area: button-send;
+                border: none;
+                font-weight: 500;
+                color: #fff;
+                background-color: #5f7096;
+                letter-spacing: 2px;
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.6rem;
+                
+            }
+            .button-send:hover {
+                background-color: #7881aaa6;
+            }
+
+/* UBICACION  */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .info-content {
+        display: block;
+        justify-content: center;
+    }
+
+        .info-content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+            .info-content ul li {
+            list-style: none;
+            padding: 0 .5rem;
+            text-align: justify;
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+            padding: 20px;
+            }
+
+            .location-content {
+                max-width: auto;
+                max-width: auto;
+            }
+
+                .location-content iframe {
+                max-width: 300px;
+                max-height: 200px;
+            }
+
+/* ----- MEDIA QUERIES ---- */
+
+@media screen and (max-width: 1300px){
+    .contactForm-grid {
+        display: none;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(5, auto);
+            grid-template-areas: 
+            'input-name input-lastname'
+            'input-phone input-email'
+            'input-subject input-subject'
+            'input-message input-message'
+            'input-message input-message'
+            'button-send button-send';
+    }
+    .services-index {
+        display: flex;
+        justify-content: center;
+    }
+    .services-index-grid {
+        /* display: none; */
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: 
+        'title-1'
+        'description-1'
+        'title-2'
+        'description-2'
+        'title-3'
+        'description-3';
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+    .contactForm-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 690px){
+
+    .logo-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .logo-container h1 {
+        display: none;
+    }
+
+    .nav-list {
+        width: 100%;
+    }
+
+    .aboutUs-content img {
+        display: none;
+    }
+
+    .services-index-container h2 {
+        text-align: center;
+    }
+}
+
+    @media screen and (max-width: 540px) {
+      .nav-list ul{
+          flex-direction: column;
+          align-items: center;
+      }  
+
+      .contactForm-grid {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, auto);
+        grid-template-areas: 
+        'input-name'
+        'input-lastname'
+        'input-phone'
+        'input-email'
+        'input-subject'
+        'input-message'
+        'input-message'
+        'button-send';
+      }
+
+    }
+
+
+/* **************ESTO CORRESPONDE A LAS OTRAS PAGINAS*************** */
+
+/* ----- Comienza servicios.html----- */
+
+
+/* .services-header-left,
+.services-header-right {
+    border-bottom: #5f7096 1px solid;
+
+}
+
+.services-header-left {
+    display: block;
+    text-align: left;
+
+}
+
+.services-header-right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: 15%;
+
+}
+
+
+
+.services-description {
+   display: block;
+   margin: auto;
+   text-align: justify;
+   width: 50%;
+   margin-bottom: 40px;
+   margin-bottom: 50px;
+} */
+
+/* ----- Fin servicios.html ----- */
+
+
+/* ----- Comienza nosotros.html ----- */
+
+/* #director-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-director {
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+#paragraf-director {
+    display: inline-block;
+    width: 40%;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+
+#img-director{
+    width: 201px;
+    height: 251px;
+}
+
+#team-container-main {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+
+}
+
+.teamate-name {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 120%;
+
+}
+
+.teamate-position {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+.img-team {
+    width: 150px;
+    height: 150px;
+
+} */
+/* -----Fin nostros.html----- */
+
+/* ----- Comienza testimonio_de_clientes.html */
+
+
+ /* .testimony-container {
+    padding: 5%;
+    
+}
+
+.testimony-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    row-gap: 50px;
+
+}
+
+.img-testimony {
+    width: 30%; 
+    margin: auto;
+}
+
+
+.testimony {
+    align-content: center;
+}
+
+
+.testimony:nth-child(2) {
+    grid-column: 2/4;
+}
+
+.testimony:nth-child(3) {
+    grid-column: 1/3;
+
+}
+
+.testimony:nth-child(6) {
+    grid-column: 2/4;
+}
+
+
+
+
+.img-testimony {
+    margin: 10px;
+}  */
+
+/* ----- Fin testimonio_de_clientes.html -----*/

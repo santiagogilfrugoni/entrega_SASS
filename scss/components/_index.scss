@@ -1,0 +1,103 @@
+/* INDEX */
+
+/* SOBRE NOSOTROS */
+
+.aboutUs { /*seccion*/
+    display: flex;
+    justify-content: center;
+    .aboutUs-container {
+        width: 80%;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        h2 {
+            margin-right: 1rem;
+            margin-left: 1rem;
+
+        }
+        .aboutUs-content {
+            img {
+                float: right;
+                margin-left: 20px;
+                max-width: 250px;
+                max-height: 300px;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+/* SERVICIOS */
+
+.services-index { /*seccion*/
+    display: flex;
+    justify-content: center;
+    .services-index-container {
+        width: 80%;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        h2 {
+
+        }
+        .services-index-grid {
+            margin-right: 1rem;
+            margin-left: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, auto) ;
+            grid-template-rows: 1fr auto;
+            grid-template-areas: 
+            'title-1 title-2 title-3'
+        '   description-1 description-2 description-3';
+            grid-gap: 10px;
+
+            div {
+                text-align: justify;
+            }
+            .services-index-title {
+                font-size: 2.5rem;
+                font-weight: 400; 
+                margin-bottom: 10px;  
+                justify-self: center;  
+
+            }
+            .services-index-description {
+                font-size: 1.6rem;
+                padding: 20px;
+                background-color: $color-1;
+                color: $white;
+                width: 250px;
+                height: 230px;
+                justify-self: center;
+            }
+
+            .services-index-title-1 {
+                grid-area: title-1;
+            }        
+
+            .services-index-description-1 {
+                grid-area: description-1;
+            }
+
+            .services-index-title-2 {
+                grid-area: title-2;
+    
+            }
+
+            .services-index-description-2 {
+                grid-area: description-2;
+            }
+
+            .services-index-title-3 {
+                grid-area: title-3;
+            }
+
+            .services-index-description-3 {
+                grid-area: description-3 ;
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,30 @@
+/* FOOTER */ 
+
+footer {
+    background-color: $color-main;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    .footer-container {
+        width: 80%;
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+                max-width: 20px;
+                max-height: 20px;
+            }
+            p {
+                font-size: 1.4rem;
+                margin: 10px;
+                color: $white;
+                
+            }
+        }
+    }
+    
+}
